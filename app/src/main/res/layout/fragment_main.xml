@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/greenbackground"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearbuttons"
+        >
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/clearallbutton"
+                android:text="Clear All"
+                android:background="#F4FF81"
+                android:padding="10dp"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectallbutton"
+                android:text="Select All"
+                android:background="#F4FF81"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/deletebutton"
+                android:text="Delete"
+                android:background="#F4FF81"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movielistview"
+            android:layout_below="@+id/linearbuttons"
+            android:divider="#AEEA00"
+            android:dividerHeight="2dp"
+            ></ListView>
+
+
+
+</RelativeLayout>
